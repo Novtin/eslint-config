@@ -1,15 +1,17 @@
 module.exports = {
     "extends": [
         "airbnb-base",
+        "prettier",
         "./common.js"
     ],
-    "plugins":["steroidsjs-backend"],
+    "plugins":["prettier", "steroidsjs-backend"],
     "rules": {
         "steroidsjs-backend/required-enum-to-helper": "error",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {"argsIgnorePattern": "^_"}
         ],
+        "prettier/prettier": "error",
     },
     "overrides": [
         {
